@@ -409,7 +409,17 @@ export default function StarTypeEventPage() {
                 </div>
 
                 <div className="rounded-[32px] border border-slate-100 bg-white p-6 shadow-lg ring-1 ring-slate-200/80 md:p-8">
-                  <div className={`rounded-[28px] bg-gradient-to-r ${result.color} p-6 text-white shadow-[0_0_40px_rgba(99,102,241,0.18)] md:p-8`}>
+                 <div
+  className={`rounded-[28px] bg-gradient-to-r ${result.color} p-6 text-white md:p-8 ${
+    result.code === "빅뱅형"
+      ? "shadow-[0_0_45px_rgba(251,146,60,0.45)]"
+      : result.code === "북극성형"
+      ? "shadow-[0_0_45px_rgba(59,130,246,0.45)]"
+      : result.code === "블랙홀형"
+      ? "shadow-[0_0_45px_rgba(139,92,246,0.38)]"
+      : "shadow-[0_0_45px_rgba(217,70,239,0.42)]"
+  }`}
+>
                     <div className="text-sm font-semibold uppercase tracking-[0.22em] text-white/80">Star Type Result</div>
                     <div className="mt-3 text-5xl md:text-6xl">{result.emoji}</div>
                     <h2 className="mt-4 text-3xl font-black md:text-4xl">{result.code}</h2>
