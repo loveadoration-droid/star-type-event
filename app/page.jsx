@@ -461,7 +461,12 @@ export default function StarTypeEventPage() {
 
                   <Button
                     className="mt-3 w-full rounded-2xl py-6 text-base"
-                    onClick={() => window.open(FORM_LINK, "_blank", "noopener,noreferrer")}
+                    onClick={() => window.open(
+                      "https://naver.me/xwooAyXm",
+                      "_blank",
+                      "noopener,noreferrer"
+                    )
+                    }
                   >
                     이벤트 참여하기
                     <ExternalLink className="ml-2 h-4 w-4" />
