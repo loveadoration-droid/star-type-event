@@ -44,7 +44,7 @@ function Badge({ className = "", children, variant }) {
   return <span className={`inline-flex items-center ${variantClass} ${className}`}>{children}</span>;
 }
 
-const FORM_LINK = "https://example.com";
+const FORM_LINK = "https://naver.me/xwooAyXm"
 
 const results = {
   BIGBANG: {
